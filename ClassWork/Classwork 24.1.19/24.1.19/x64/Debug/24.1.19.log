@@ -1,0 +1,4 @@
+﻿  Source.cpp
+d:\step\c-\classwork\24.1.19\24.1.19\source.cpp(35): warning C4715: FoundRight: значение возвращается не при всех путях выполнения
+d:\step\c-\classwork\24.1.19\24.1.19\source.cpp(32): warning C4715: FoundLeft: значение возвращается не при всех путях выполнения
+  24.1.19.vcxproj -> D:\STEP\C-\ClassWork\24.1.19\x64\Debug\24.1.19.exe

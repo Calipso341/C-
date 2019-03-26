@@ -1,0 +1,4 @@
+﻿  Source.cpp
+d:\step git\c-my-begining-\classwork\classwork 2.28.19\classwork 2.28.19\source.cpp(88): error C2672: 'DeleteNumber': no matching overloaded function found
+d:\step git\c-my-begining-\classwork\classwork 2.28.19\classwork 2.28.19\source.cpp(88): error C2784: 'void DeleteNumber(T1 [],T2 *,T3,T4)': could not deduce template argument for 'T2 *' from 'int'
+  d:\step git\c-my-begining-\classwork\classwork 2.28.19\classwork 2.28.19\source.cpp(48): note: see declaration of 'DeleteNumber'
