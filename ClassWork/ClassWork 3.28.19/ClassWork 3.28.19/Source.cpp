@@ -19,6 +19,7 @@ struct Player {
 
 };
 struct Team {
+public:
 	string country;
 	string city;
 	string name;
@@ -26,10 +27,14 @@ struct Team {
 	unsigned short wins;
 	unsigned short draws;
 	unsigned int losses;
+private:
 	unsigned  short teamSize;
 
 	void ShowInfo() {
 		cout << "\n\n\tCoutnry: " << country << "\n\n\tCity: " << city << "\n\n\tName: " << name << "\n\n\tCoach: " << coach << "\n\n\tWins: " << wins << "\n\n\tDraws: " << draws << "\n\n\tLosses: " << losses << "\n\n\tTeamSize: " << teamSize << endl;
+	}
+	void SetTeamSize(short newName) {
+	
 	}
 	Player *player = new Player[teamSize];
 };
