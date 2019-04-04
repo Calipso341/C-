@@ -21,7 +21,7 @@ struct Info {
 	
 		string txt;
 
-		txt = name + " - " + surname + " - " + to_string(phonenumber) + " - " + addres + "\n\n";
+		txt = "Name: " + name + "\n\n\tSurname: " + surname + "\n\n\tPhone number: " + to_string(phonenumber) + "\n\n\tAddres: " + addres + "\n\n";
 		
 		return txt;
 	}
@@ -31,13 +31,13 @@ void FillInfo(Info *information, int const Size) {
 
 	for (int i = 0; i < Size; i++)
 	{
-		cout << "\n\n\tEnter name of customer:";
+		cout << "\n\n\tEnter name of customer: ";
 		cin >> information[i].name;
-		cout << "\n\n\tEnter surname of customer:";
+		cout << "\n\n\tEnter surname of customer: ";
 		cin >> information[i].surname;
-		cout << "\n\n\tEnter addres of customer:";
+		cout << "\n\n\tEnter addres of customer: ";
 		cin >> information[i].addres;
-		cout << "\n\n\tEnter phonenamber of customer:";
+		cout << "\n\n\tEnter phonenamber of customer: ";
 		cin >> information[i].phonenumber;
 	}
 

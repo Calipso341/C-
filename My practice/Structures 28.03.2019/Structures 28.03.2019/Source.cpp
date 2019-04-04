@@ -22,7 +22,7 @@ struct Employee {
 
 void FillEmployee(Employee *employee, const int Size) {
 
-	Employee *employee = new Employee[Size];
+	Employee *employees = new Employee[Size];
 
 	for (int i = 0; i < Size; i++)
 	{
@@ -63,11 +63,11 @@ int main() {
 
 	cin >> Size;
 
-	Employee employees;
+	Employee employee;
 
-	FillEmployee(employees.employee, Size);
+	FillEmployee(employee.employees, Size);
 	system("cls");
-	ShowInfo(employees.employee, Size);
+	ShowInfo(employee.employees, Size);
 
 	system("pause");
 	return 0;
