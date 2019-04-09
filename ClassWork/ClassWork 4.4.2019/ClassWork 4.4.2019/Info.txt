@@ -1,12 +1,9 @@
-Nikita - Tatarintsev - 12 - Stara
 
-Sergij - Tatarintsev - 12 - Stara
+Name: Nikita
 
-Name: Bill
-
-	SurnameGates
+	Surname: Tatarintsev
 
 	Phone number: 2147483647
 
-	Addres: Florida
+	Addres: Stara
 

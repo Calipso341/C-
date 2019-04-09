@@ -14,7 +14,7 @@ struct Info {
 
 	void ShowInfo() {
 
-		cout << "\n\tName: " << name << "\n\n\tSurname: " << surname << "\n\n\tAddres: " << addres << "\n\n\tPhonenuber: " << phonenumber << endl;
+		cout << "\n\tName: " << name << "\n\n\tSurname: " << surname << "\n\n\tAddres: " << addres << "\n\n\tPhonenumber: " << phonenumber << endl;
 	    
 	}
 	string StringFile() {
@@ -75,7 +75,7 @@ int main() {
 
 	Info *information = new Info[Size];
 	
-	Info Bill;
+	//Info Bill;
 
 	FillInfo(information, Size);
 	system("cls");
