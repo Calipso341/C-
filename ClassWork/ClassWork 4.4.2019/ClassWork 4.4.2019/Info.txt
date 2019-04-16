@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Nikita - Tatarintsev - 12 - Stara
 
 Nikita - Lis - 909521516 - Stara
@@ -8,3 +9,14 @@ Nikita - Niki - 1412354156 - Stara
 
 fcfa - aertawet - 12431 - atawet
 
+=======
+
+Name: Nikita
+
+	Surname: Tatarintsev
+
+	Phone number: 2147483647
+
+	Addres: Stara
+
+>>>>>>> 21557d8ee7cbde58e558cf8274744cfdea51a457
