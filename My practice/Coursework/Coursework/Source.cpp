@@ -13,7 +13,7 @@ struct WorkerInfo
 	string post;
 	short int phone;
 	short int age;
-	short int workDays;
+	short int workdays;
 	short int weekends;
 };
 
@@ -55,15 +55,16 @@ void FillInfo()
 		cout << "\n\n\tEnter the post: ";
 		cin >> worker[i].post;
 		cout << "\n\n\tEnter the phone number: ";
-		cin >> phone;
+		cin >> worker[i].phone;
 		cout << "\n\n\tEnter the age: ";
-		cin >> age;
+		cin >> worker[i].age;
 		cout << "\n\n\tEnter the number of work daays: ";
-		cin >> workdays;
+		cin >> worker[i].workdays;
 		cout << "\n\n\tEnter the number of weekends: ";
-		cin >> weekends;
+		cin >> worker[i].weekends;
 		cout << "\n\n\t";
-		info << "\n\n\tName: " << name << "\n\n\tSurname: " << surname << "\n\n\tDiskription: " << discription << "\n\n\tPost: " << post << "\n\n\tPhone: " << phone << "\n\n\tAge: " << age << "\n\n\tWork days: " << workdays << "\n\n\tWeekends: " << weekends;
+		info << "\n\n\tName: " << name << "\n\n\tSurname: " << surname << "\n\n\tDiskription: " << discription << "\n\n\tPost: " << post << "\n\n\tPhone: " << to_string(phone) << "\n\n\tAge: " << to_string(age) << "\n\n\tWork days: " << to_string(workdays) << "\n\n\tWeekends: " << to_string(weekends);
+		info.close();
 	}
 
 
