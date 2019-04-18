@@ -25,10 +25,10 @@ void FillInfo()
 	string surname;
 	string discription;
 	string post;
-	short int phone;
-	short int age;
-	short int workdays;
-	short int weekends;
+	short int phone = 0;
+	short int age = 0;
+	short int workdays = 0;
+	short int weekends = 0;
 
 	int Size = 0;
 
@@ -51,7 +51,7 @@ void FillInfo()
 		cout << "\n\n\tEnter tne surname: ";
 		cin >> worker[i].surname;
 		cout << "\n\n\tEnter the discription: ";
-		cin >> worker[i].discription;
+		getline(cin, worker[i].discription);
 		cout << "\n\n\tEnter the post: ";
 		cin >> worker[i].post;
 		cout << "\n\n\tEnter the phone number: ";
@@ -63,11 +63,9 @@ void FillInfo()
 		cout << "\n\n\tEnter the number of weekends: ";
 		cin >> worker[i].weekends;
 		cout << "\n\n\t";
-		info << "\n\n\tName: " << name << "\n\n\tSurname: " << surname << "\n\n\tDiskription: " << discription << "\n\n\tPost: " << post << "\n\n\tPhone: " << to_string(phone) << "\n\n\tAge: " << to_string(age) << "\n\n\tWork days: " << to_string(workdays) << "\n\n\tWeekends: " << to_string(weekends);
-		info.close();
+		info << "\n\n\tName: " + worker[i].name + "\n\n\tSurname: " + worker[i].surname + "\n\n\tDiskription: " + worker[i].discription + "\n\n\tPost: " + worker[i].post + "\n\n\tPhone: " + to_string(worker[i].phone) + "\n\n\tAge: " + to_string(worker[i].age) + "\n\n\tWork days: " + to_string(worker[i].workdays) + "\n\n\tWeekends: " + to_string(worker[i].weekends);
 	}
-
-
+	info.close();
 }
 
 void Menu()
