@@ -1,47 +1,17 @@
 
-Name: 
 
-	Surname: 
+	Name: Tatarintsev
 
-	Diskription: 
+	Surname: Nikita
 
-	Post: 
+	Diskription: boy
 
-	Phone: 32767
+	Post: owner
 
-	Age: -13108
+	Phone: 73226462
 
-	Work days: -13108
+	Age: 18
 
-	Weekends: -13108
-Name: 
+	Work days: 12
 
-	Surname: 
-
-	Diskription: 
-
-	Post: 
-
-	Phone: 32767
-
-	Age: -13108
-
-	Work days: -13108
-
-	Weekends: -13108
-
-	Name: 
-
-	Surname: 
-
-	Diskription: 
-
-	Post: 
-
-	Phone: 32767
-
-	Age: -13108
-
-	Work days: -13108
-
-	Weekends: -13108
+	Weekends: 12

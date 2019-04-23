@@ -11,25 +11,14 @@ struct WorkerInfo
 	string surname;
 	string discription;
 	string post;
-	short int phone;
-	short int age;
-	short int workdays;
-	short int weekends;
+    long long int phone;
+	int age;
+	int workdays;
+    int weekends;
 };
-
 
 void FillInfo() 
 {
-
-	string name;
-	string surname;
-	string discription;
-	string post;
-	short int phone;
-	short int age;
-	short int workdays;
-	short int weekends;
-
 	int Size = 0;
 
 	cout << "\n\n\tEneter number of workers: ";
@@ -63,24 +52,92 @@ void FillInfo()
 		cout << "\n\n\tEnter the number of weekends: ";
 		cin >> worker[i].weekends;
 		cout << "\n\n\t";
-		info << "\n\n\tName: " << name << "\n\n\tSurname: " << surname << "\n\n\tDiskription: " << discription << "\n\n\tPost: " << post << "\n\n\tPhone: " << to_string(phone) << "\n\n\tAge: " << to_string(age) << "\n\n\tWork days: " << to_string(workdays) << "\n\n\tWeekends: " << to_string(weekends);
-		info.close();
+		info << "\n\n\tName: " << worker[i].name << "\n\n\tSurname: " << worker[i].surname << "\n\n\tDiskription: " << worker[i].discription << "\n\n\tPost: " << worker[i].post << "\n\n\tPhone: " << worker[i].phone << "\n\n\tAge: " << worker[i].age << "\n\n\tWork days: " << worker[i].workdays << "\n\n\tWeekends: " << worker[i].weekends;
 	}
+	info.close();
+}
 
+void GetInfo()
+{
+	string file = "Info.txt";
 
+	ifstream info;
+
+	info.open(file);
+
+	if (!info.is_open())
+	{
+		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tFile does not exit! Creat one before read it!";
+		Sleep(3000);
+		system("cls");
+		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tLoading...";
+		Sleep(1000);
+		system("cls");
+	}
+	else 
+	{
+		char ch;
+
+		while (info.get(ch))
+		{
+			cout << ch;
+		}
+	}
 }
 
 void Menu()
 {
 	int MenuChoise = 0;
 
-	cout << "\n\tTo fill information about employee, PRESS [1]. " << "\n\n\tTo add new employee, PRESS [2]. " << "\n\n\tTo delete an employee and info about him, PRESS [3]. " << "\n\n\tTo see information about all employees, PRESS [4]. " << "\n\n\tTo see information about direct employee, PRESS [5]. " << "\n\n\tTo exit, PRESS [0]. " << "\n\n\tYour choise: ";
+	cout << "\n\tTo fill information about new employee, PRESS [1]. " << "\n\n\tTo delete an employee and info about him, PRESS [2]. " << "\n\n\tTo see information about all employees, PRESS [3]. " << "\n\n\tTo see information about direct employee, PRESS [4]. " << "\n\n\tTo exit, PRESS [0]. " << "\n\n\tYour choise: ";
 
 	cin >> MenuChoise;
 
-	if (int MenuChoise = 1) 
+	if (MenuChoise == 1) 
 	{
+		system("cls");
 		FillInfo();
+		system("cls");
+		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tSaving info in file...";
+		Sleep(1000);
+		system("cls");
+		Menu();
+	}
+	else if (MenuChoise == 3)
+	{
+		int Choise1 = 0;
+
+		system("cls");
+		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tLoading...";
+		Sleep(1000);
+		system("cls");
+		GetInfo();
+		cout << "\n\n\tTo move back to menu, PRESS [1]" << "\n\n\tYour choise: ";
+		cin >> Choise1;
+
+		if (Choise1 == 1)
+		{
+			system("cls");
+			cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tLoading...";
+			Sleep(1000);
+			system("cls");
+			Menu();
+		}
+		else
+		{
+			system("cls");
+			cout << "\n\n\tWrong button, you will automatically move to the menu...";
+			Sleep(1000);
+			system("cls");
+			Menu();
+		}
+	}
+	else if (MenuChoise == 0)
+	{
+		system("cls");
+		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tBye!";
+		Sleep(1000);
+		exit(0);
 	}
 }
 
