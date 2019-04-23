@@ -1,0 +1,17 @@
+
+
+	::::::::::::::::::::::::::::::::::::::
+
+	Name: Nikita
+
+	Surname: Tatarintsev
+
+	Age: 18
+
+	Cars number : 2315125
+
+	Card limit : 5000
+
+	Currency: dollar
+
+	Money: 1000

@@ -19,6 +19,19 @@ struct WorkerInfo
 
 void FillInfo() 
 {
+<<<<<<< HEAD
+=======
+
+	string name;
+	string surname;
+	string discription;
+	string post;
+	short int phone = 0;
+	short int age = 0;
+	short int workdays = 0;
+	short int weekends = 0;
+
+>>>>>>> 3cec97f242483a9585daf03f21ef9fa4dd6d4ce1
 	int Size = 0;
 
 	cout << "\n\n\tEneter number of workers: ";
@@ -40,7 +53,7 @@ void FillInfo()
 		cout << "\n\n\tEnter tne surname: ";
 		cin >> worker[i].surname;
 		cout << "\n\n\tEnter the discription: ";
-		cin >> worker[i].discription;
+		getline(cin, worker[i].discription);
 		cout << "\n\n\tEnter the post: ";
 		cin >> worker[i].post;
 		cout << "\n\n\tEnter the phone number: ";
@@ -52,6 +65,7 @@ void FillInfo()
 		cout << "\n\n\tEnter the number of weekends: ";
 		cin >> worker[i].weekends;
 		cout << "\n\n\t";
+<<<<<<< HEAD
 		info << "\n\n\tName: " << worker[i].name << "\n\n\tSurname: " << worker[i].surname << "\n\n\tDiskription: " << worker[i].discription << "\n\n\tPost: " << worker[i].post << "\n\n\tPhone: " << worker[i].phone << "\n\n\tAge: " << worker[i].age << "\n\n\tWork days: " << worker[i].workdays << "\n\n\tWeekends: " << worker[i].weekends;
 	}
 	info.close();
@@ -83,6 +97,11 @@ void GetInfo()
 			cout << ch;
 		}
 	}
+=======
+		info << "\n\n\tName: " + worker[i].name + "\n\n\tSurname: " + worker[i].surname + "\n\n\tDiskription: " + worker[i].discription + "\n\n\tPost: " + worker[i].post + "\n\n\tPhone: " + to_string(worker[i].phone) + "\n\n\tAge: " + to_string(worker[i].age) + "\n\n\tWork days: " + to_string(worker[i].workdays) + "\n\n\tWeekends: " + to_string(worker[i].weekends);
+	}
+	info.close();
+>>>>>>> 3cec97f242483a9585daf03f21ef9fa4dd6d4ce1
 }
 
 void Menu()
