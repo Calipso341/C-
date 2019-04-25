@@ -1,0 +1,17 @@
+
+
+	Name: Tatarintsev
+
+	Surname: Nikita
+
+	Diskription: boy
+
+	Post: owner
+
+	Phone: 73226462
+
+	Age: 18
+
+	Work days: 12
+
+	Weekends: 12

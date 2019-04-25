@@ -1,5 +1,2 @@
 ﻿  Source.cpp
-d:\step git\c-my-begining-\my practice\coursework\coursework\source.cpp(66): error C4700: uninitialized local variable 'weekends' used
-d:\step git\c-my-begining-\my practice\coursework\coursework\source.cpp(66): error C4700: uninitialized local variable 'workdays' used
-d:\step git\c-my-begining-\my practice\coursework\coursework\source.cpp(66): error C4700: uninitialized local variable 'age' used
-d:\step git\c-my-begining-\my practice\coursework\coursework\source.cpp(66): error C4700: uninitialized local variable 'phone' used
+  Coursework.vcxproj -> D:\Step Git\C-my-begining-\My practice\Coursework\Debug\Coursework.exe
