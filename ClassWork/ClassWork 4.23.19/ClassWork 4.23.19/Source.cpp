@@ -19,6 +19,40 @@ public:
 	}
 };
 
+void GetDirectInfo(Cash person) 
+{
+	int number = 0;
+
+	system("cls");
+	cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tLoading...";
+	Sleep(1000);
+	system("cls");
+	
+	cout << "\n\n\tEnter number of card you wand to get money from: ";
+	cin >> number;
+
+	if (number == person.number) 
+	{
+		int amount = 0;
+
+		cout << "\n\n\tEnter amount that you want to get from your card: ";
+		cin >> amount;
+		
+		if (amount >= person.number) 
+		{
+			string file = "Info.txt";
+
+			ofstream info;
+
+			info.open(file);
+
+			person.number - amount;
+
+			info.close();
+		} 
+	}
+}
+
 void FillCash() 
 {
 	Cash person;
@@ -86,7 +120,7 @@ void Menu()
 {
 	int choise = 0;
 	
-	cout << "\n\t\t\t\t\t\tBank Alfa " << "\n\n\tTo create card, PRESS [1]." << "\n\n\tTo view info about cards, PRESS [2]." << "\n\n\tTo exit, PRESS [0]" << endl << endl;
+	cout << "\n\t\t\t\t\t\tBank Alfa " << "\n\n\tTo create card, PRESS [1]." << "\n\n\tTo view info about cards, PRESS [2]." << "\n\n\tTo get money from your credit card, PRESS [3]." << "\n\n\tTo exit, PRESS [0]" << endl << endl;
 
 	cout << "\n\n\tYour choise: ";
 
@@ -119,6 +153,11 @@ void Menu()
 			system("cls");
 			Menu();
 		}
+	}
+	else if (choise == 3) 
+	{
+		system("cls");
+		GetDirectInfo(Cash);
 	}
 	else if (choise == 0)
 	{
